@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int n=12;
+		    String k=dec_bin(n);
+		    System.out.println(k);
+	}
+	public static String dec_bin(int n){
+	    if(n==1){
+	        return "1";
+	    }
+	    
+	    String s=Integer.toString(n%2);
+	    return dec_bin(n/2)+s;
+	}
+}
